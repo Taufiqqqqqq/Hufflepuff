@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>Payment Form</h1>
+<form id="payment" action="PaymentServlet" method="post">
+ <label for="firstname">First Name</label><br>
+ <input type="text" id="firstname" name="firstname"><br>
+ <label for="lastname">Last Name</label><br>
+ <input type="text" id="lastname" name="lastname"><br>
+ <label for="address1">Address 1</label><br>
+ <input type="text" id="address1" name="address1"><br>
+ <label for="address2">Address 2</label><br>
+ <input type="text" id="address2" name="address2"><br>
+  <label for="city">City</label><br>
+ <input type="text" id="city" name="city"><br>
+ <label for="postcode">Postcode</label><br>
+ <input type="number" id="postcode" name="postcode"><br>
+ <label for="card">Debit/Credit Card</label><br>
+  <input type="radio" id="card" name="card" value="Master">
+  <br><img src="images/master.png"><br>
+  <input type="radio" id="card" name="card" value="Visa">
+  <br><img src="images/visa.png">
+  <br><br>  
+  <label for="cardnumber">Card Number</label><br>
+  <input type="number" id="cardnumber" name="cardnumber"><br>
+  <label for="cardMonth">Expiration Date</label><br>
+      <select name="cardMonth" id="cardMonth">
+          <option value="">--Month--</option>
+          <option value="01">January (01)</option>
+          <option value="02">February (02)</option>
+          <option value="03">March (03)</option>
+          <option value="04">April (04)</option>
+          <option value="05">May (05)</option>
+          <option value="06">June (06)</option>
+          <option value="07">July (07)</option>
+          <option value="08">August (08)</option>
+          <option value="09">September (09)</option>
+          <option value="10">October (10)</option>
+          <option value="11">November (11)</option>
+          <option value="12">December (12)</option>
+     </select>
+          <select name="cardYear" id="yearList">
+           <option value="">--Year--</option>
+           <option value="2020">2020</option>
+           <option value="2021">2021</option>
+           <option value="2022">2022</option>
+           <option value="2023">2023</option>
+           <option value="2024">2024</option>
+      </select>
+  <br><br>
+  <input type="submit" value="Submit">
+  <input type="reset" value="Reset">
+</form> 
+</body>
+</html>
